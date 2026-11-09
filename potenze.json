@@ -1,0 +1,310 @@
+{
+ "versione": "2026-10-31",
+ "dose_dipendenti": {
+  "METFORMINA": {
+   "etichetta": "Metformina",
+   "unita": "mg/die",
+   "fasce": [
+    {
+     "fino_a": 999,
+     "incluso": true,
+     "potenza": 7
+    },
+    {
+     "fino_a": 1499,
+     "incluso": true,
+     "potenza": 9
+    },
+    {
+     "fino_a": 1999,
+     "incluso": true,
+     "potenza": 12
+    },
+    {
+     "fino_a": null,
+     "incluso": true,
+     "potenza": 13
+    }
+   ]
+  },
+  "CANAGLIFLOZIN": {
+   "etichetta": "Canagliflozin",
+   "unita": "mg/die",
+   "fasce": [
+    {
+     "fino_a": 299,
+     "incluso": true,
+     "potenza": 10
+    },
+    {
+     "fino_a": null,
+     "incluso": true,
+     "potenza": 12
+    }
+   ]
+  },
+  "DAPAGLIFLOZIN": {
+   "etichetta": "Dapagliflozin",
+   "unita": "mg/die",
+   "fasce": [
+    {
+     "fino_a": 10,
+     "incluso": false,
+     "potenza": 9
+    },
+    {
+     "fino_a": null,
+     "incluso": true,
+     "potenza": 11
+    }
+   ]
+  },
+  "EMPAGLIFLOZIN": {
+   "etichetta": "Empagliflozin",
+   "unita": "mg/die",
+   "fasce": [
+    {
+     "fino_a": 24,
+     "incluso": true,
+     "potenza": 8
+    },
+    {
+     "fino_a": null,
+     "incluso": true,
+     "potenza": 9
+    }
+   ]
+  },
+  "ERTUGLIFLOZIN": {
+   "etichetta": "Ertugliflozin",
+   "unita": "mg/die",
+   "fasce": [
+    {
+     "fino_a": 14,
+     "incluso": true,
+     "potenza": 11
+    },
+    {
+     "fino_a": null,
+     "incluso": true,
+     "potenza": 13
+    }
+   ]
+  },
+  "LIRAGLUTIDE": {
+   "etichetta": "Liraglutide",
+   "unita": "mg/die",
+   "fasce": [
+    {
+     "fino_a": 1.8,
+     "incluso": false,
+     "potenza": 10
+    },
+    {
+     "fino_a": null,
+     "incluso": true,
+     "potenza": 13
+    }
+   ]
+  },
+  "SEMAGLUTIDE SC": {
+   "etichetta": "Semaglutide sottocute",
+   "unita": "mg/settimana",
+   "fasce": [
+    {
+     "fino_a": 1,
+     "incluso": false,
+     "potenza": 16
+    },
+    {
+     "fino_a": 2,
+     "incluso": false,
+     "potenza": 17
+    },
+    {
+     "fino_a": null,
+     "incluso": true,
+     "potenza": 20
+    }
+   ]
+  },
+  "SEMAGLUTIDE OS": {
+   "etichetta": "Semaglutide orale",
+   "unita": "mg/die",
+   "fasce": [
+    {
+     "fino_a": 6,
+     "incluso": true,
+     "potenza": 7
+    },
+    {
+     "fino_a": 13,
+     "incluso": true,
+     "potenza": 11
+    },
+    {
+     "fino_a": null,
+     "incluso": true,
+     "potenza": 13
+    }
+   ]
+  },
+  "DULAGLUTIDE": {
+   "etichetta": "Dulaglutide",
+   "unita": "mg/settimana",
+   "fasce": [
+    {
+     "fino_a": 1.5,
+     "incluso": false,
+     "potenza": 12
+    },
+    {
+     "fino_a": 3,
+     "incluso": false,
+     "potenza": 17
+    },
+    {
+     "fino_a": 4.5,
+     "incluso": false,
+     "potenza": 19
+    },
+    {
+     "fino_a": null,
+     "incluso": true,
+     "potenza": 20
+    }
+   ]
+  },
+  "TIRZEPATIDE": {
+   "etichetta": "Tirzepatide",
+   "unita": "mg/settimana",
+   "fasce": [
+    {
+     "fino_a": 9,
+     "incluso": true,
+     "potenza": 22
+    },
+    {
+     "fino_a": 14,
+     "incluso": true,
+     "potenza": 24
+    },
+    {
+     "fino_a": null,
+     "incluso": true,
+     "potenza": 25
+    }
+   ]
+  }
+ },
+ "fisse": {
+  "EXENATIDE": {
+   "etichetta": "Exenatide",
+   "potenza": 21
+  },
+  "INSULINA DEGLUDEC": {
+   "etichetta": "Insulina degludec",
+   "potenza": 18
+  },
+  "INSULINA GLARGINE": {
+   "etichetta": "Insulina glargine",
+   "potenza": 17
+  },
+  "INSULINA DETEMIR": {
+   "etichetta": "Insulina detemir",
+   "potenza": 17
+  },
+  "INSULINA UMANA NPH+REGOLARE": {
+   "etichetta": "Insulina umana nph+regolare",
+   "potenza": 17
+  },
+  "INSULINA UMANA NPH/LENTA": {
+   "etichetta": "Insulina umana nph/lenta",
+   "potenza": 17
+  },
+  "INSULINA UMANA NPH": {
+   "etichetta": "Insulina umana nph",
+   "potenza": 17
+  },
+  "INSULINA ASPART": {
+   "etichetta": "Insulina aspart",
+   "potenza": 11
+  },
+  "INSULINA GLULISINA": {
+   "etichetta": "Insulina glulisina",
+   "potenza": 11
+  },
+  "INSULINA LISPRO": {
+   "etichetta": "Insulina lispro",
+   "potenza": 11
+  },
+  "INSULINA UMANA REGOLARE": {
+   "etichetta": "Insulina umana regolare",
+   "potenza": 11
+  },
+  "PIOGLITAZONE": {
+   "etichetta": "Pioglitazone",
+   "potenza": 11
+  },
+  "ROSIGLITAZONE": {
+   "etichetta": "Rosiglitazone",
+   "potenza": 11
+  },
+  "ALOGLIPTIN": {
+   "etichetta": "Alogliptin",
+   "potenza": 11
+  },
+  "REPAGLINIDE": {
+   "etichetta": "Repaglinide",
+   "potenza": 12
+  },
+  "VILDAGLIPTIN": {
+   "etichetta": "Vildagliptin",
+   "potenza": 10
+  },
+  "GLICLAZIDE": {
+   "etichetta": "Gliclazide",
+   "potenza": 14
+  },
+  "GLIMEPIRIDE": {
+   "etichetta": "Glimepiride",
+   "potenza": 14
+  },
+  "GLIBENCLAMIDE": {
+   "etichetta": "Glibenclamide",
+   "potenza": 14
+  },
+  "GLIPIZIDE": {
+   "etichetta": "Glipizide",
+   "potenza": 14
+  },
+  "GLIQUIDONE": {
+   "etichetta": "Gliquidone",
+   "potenza": 14
+  },
+  "ACARBOSE": {
+   "etichetta": "Acarbose",
+   "potenza": 9
+  },
+  "LINAGLIPTIN": {
+   "etichetta": "Linagliptin",
+   "potenza": 7
+  },
+  "LIXISENATIDE": {
+   "etichetta": "Lixisenatide",
+   "potenza": 7
+  },
+  "SAXAGLIPTIN": {
+   "etichetta": "Saxagliptin",
+   "potenza": 7
+  },
+  "SITAGLIPTIN": {
+   "etichetta": "Sitagliptin",
+   "potenza": 7
+  },
+  "FENFORMINA": {
+   "etichetta": "Fenformina",
+   "potenza": 7
+  }
+ }
+}

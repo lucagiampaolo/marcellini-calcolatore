@@ -50,3 +50,74 @@ def avvisi(doc: dict, modello: dict, valori: dict) -> list:
         if r and _presente(x) and (float(x) < r["p1"] or float(x) > r["p99"]):
             out.append(f"{r['etichetta']}: {x} fuori dall'intervallo abituale della coorte ({r['p1']:.4g}-{r['p99']:.4g})")
     return out
+
+
+# ---- calcolo di piu' esiti insieme (usato dall'app) ----
+DEBOLI = {"tod", "composito_nonfatale", "ascvd"}
+POPOLAZIONI = {
+    "dcsi_progressione": "Il DCSI all'indice è 0",
+    "ascvd": "Il paziente non ha ASCVD pregressa",
+    "composito_nonfatale": "Il paziente non ha ASCVD pregressa",
+}
+BREVI = {
+    "morte_surrogata": "Mortalità", "dcsi_progressione": "Progr. DCSI", "oculistica_inc": "Compl. oculare",
+    "incremento_dcsi2": "DCSI +2", "hba1c_fuori_target": "HbA1c fuori target", "tt_fuori_target": "TT <70%",
+    "tt_fuori_target_tol365": "TT <70% (tol. 365, esplor.)", "tod": "TOD", "composito_nonfatale": "Comp. non fatale", "ascvd": "ASCVD",
+}
+ORDINE = ["morte_surrogata", "dcsi_progressione", "oculistica_inc", "incremento_dcsi2", "hba1c_fuori_target",
+          "tt_fuori_target", "tt_fuori_target_tol365", "tod", "composito_nonfatale", "ascvd"]
+PREDEFINITI = {"morte_surrogata", "dcsi_progressione", "oculistica_inc", "incremento_dcsi2", "hba1c_fuori_target", "tt_fuori_target"}
+DERIVATI = {"P", "n_principi_attivi"}
+
+
+def elenco_esiti(doc: dict) -> list:
+    """Esiti disponibili, in ordine fisso: chiave, etichetta, orizzonti, flag debole/esplorativo."""
+    out = []
+    for e in ORDINE:
+        ms = [m for m in doc["modelli"] if m["esito"] == e]
+        if not ms:
+            continue
+        etichetta = ms[0]["etichetta"].split(" a ")[0] if e == "hba1c_fuori_target" else ms[0]["etichetta"]
+        out.append({"chiave": e, "etichetta": etichetta, "breve": BREVI.get(e, e), "anni": sorted({m["orizzonte_anni"] for m in ms}),
+                    "debole": e in DEBOLI, "esplorativo": ms[0].get("stato") == "esplorativo", "requisiti": ms[0].get("requisiti", "")})
+    return out
+
+
+def anni_effettivi(doc: dict, esito: str, anni: int):
+    """Orizzonte usato: quello scelto se esiste, l'unico disponibile se fisso (tempo in target), altrimenti None."""
+    disp = sorted({m["orizzonte_anni"] for m in doc["modelli"] if m["esito"] == esito})
+    if anni in disp:
+        return anni
+    return disp[0] if len(disp) == 1 else None
+
+
+def ingressi_richiesti(doc: dict, esito: str, anni: int, preferenza: str = "automatico"):
+    """(obbligatori, facoltativi): obbligatori = ingressi del modello nucleo (o lab se scelto), facoltativi = esami che aggiungono il modello lab."""
+    a = anni_effettivi(doc, esito, anni)
+    cand = candidati(doc, esito, a) if a else []
+    nucleo = [v["nome"] for m in cand if m["modello"] == "nucleo" for v in m["variabili"]]
+    lab = [v["nome"] for m in cand if m["modello"] == "lab" for v in m["variabili"]]
+    if preferenza == "lab":
+        return list(dict.fromkeys(lab)), []
+    ob = list(dict.fromkeys(nucleo or lab))
+    return ob, ([x for x in dict.fromkeys(lab) if x not in ob] if preferenza == "automatico" else [])
+
+
+def calcola(doc: dict, esito: str, anni: int, valori: dict, preferenza: str = "automatico", popolazione_ok: bool = True) -> dict:
+    """Risultato di un esito: stato 'ok', 'mancano' (con elenco), 'popolazione' o 'non_disponibile'."""
+    a = anni_effettivi(doc, esito, anni)
+    r = {"esito": esito, "anni": a, "stato": "ok", "rischio": None, "modello": None, "mancanti": [], "avvisi": []}
+    if a is None:
+        r["stato"] = "non_disponibile"
+        return r
+    cand = [m for m in candidati(doc, esito, a) if preferenza == "automatico" or m["modello"] == preferenza]
+    if not popolazione_ok:
+        r["stato"] = "popolazione"
+        return r
+    m = scegli(doc, esito, a, valori, preferenza)
+    if m is None:
+        mancanti = min(([v["nome"] for v in c["variabili"] if not _presente(valori.get(v["nome"]))] for c in cand), key=len, default=[])
+        r["stato"], r["mancanti"] = "mancano", mancanti
+        return r
+    r.update(modello=m, rischio=rischio(m, valori), avvisi=avvisi(doc, m, valori))
+    return r
