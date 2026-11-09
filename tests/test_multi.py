@@ -41,14 +41,12 @@ def test_app_multi_esito_calcola_e_disegna_il_radar():
     assert not at.exception
     at.number_input(key="eta_indice").set_value(68)
     at.selectbox(key="sesso_M").set_value("Maschio")
-    at.number_input(key="TOD_ER_max").set_value(1)
     at.number_input(key="hba1c_basale").set_value(58)
     at.number_input(key="durata_dm").set_value(10)
-    at.number_input(key="dcsi_basale").set_value(0)
-    at.multiselect[0].set_value(["METFORMINA", "SITAGLIPTIN"])
+    at.checkbox(key="nessuna_comp").check()
+    at.multiselect(key="principi_attivi").set_value(["METFORMINA", "SITAGLIPTIN"])
     at.run(timeout=60)
     at.number_input(key="dose_METFORMINA").set_value(1700)
-    at.checkbox(key="pop_Il DCSI all'indice è 0").check()
     at.run(timeout=60)
     at.button[-1].click().run(timeout=60)
     assert not at.exception

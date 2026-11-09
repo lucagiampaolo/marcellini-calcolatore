@@ -1,0 +1,1235 @@
+{
+ "fonte": "Marcellini_Index_Allegati_v2.xlsx (fogli Classificazione_complicanze e ClassificazioneComplicanzeDCSI)",
+ "domini_dcsi": [
+  "NEFROPATIA",
+  "NEUROPATIA",
+  "CEREBROVASCOLARE",
+  "CARDIOVASCOLARE",
+  "VASCOLARE PERIFERICA",
+  "METABOLICA",
+  "OCULISTICA"
+ ],
+ "voci": [
+  {
+   "macroarea": "Cuore",
+   "voce": "acuto",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "CARDIOVASCOLARE": 1.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Altre Cardiopatie",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "CARDIOVASCOLARE": 2.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Angina instabile",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "CARDIOVASCOLARE": 2.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Angina stabile",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "CARDIOVASCOLARE": 1.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Angioplastica coronarica percutanea transluminale su vaso multiplo [PTCA]",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "CARDIOVASCOLARE": 2.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Angioplastica Percutanea",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "CARDIOVASCOLARE": 1.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Arterectomia",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "CARDIOVASCOLARE": 1.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Asintomatica (strumentale)",
+   "tod_er": 1,
+   "ascvd": 0,
+   "dcsi": {
+    "CARDIOVASCOLARE": 1.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "By pass Coronarico",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "CARDIOVASCOLARE": 2.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Bypass aortocoronarico per rivascolarizzazione cardiaca, SAI",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "CARDIOVASCOLARE": 2.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Bypass per rivascolarizzazione cardiaca",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "CARDIOVASCOLARE": 2.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Cardiopatia Ischemica",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "CARDIOVASCOLARE": 1.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Classe I NYHA (attività fisica asintomatica)",
+   "tod_er": 0,
+   "ascvd": 0,
+   "dcsi": {
+    "CARDIOVASCOLARE": 1.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Classe II NYHA (attività ordinaria asintomatica)",
+   "tod_er": 0,
+   "ascvd": 0,
+   "dcsi": {
+    "CARDIOVASCOLARE": 1.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Classe III NYHA ( attività minore sintomatica)",
+   "tod_er": 0,
+   "ascvd": 0,
+   "dcsi": {
+    "CARDIOVASCOLARE": 2.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Classe IV NYHA (sintomatologia a riposo)",
+   "tod_er": 0,
+   "ascvd": 0,
+   "dcsi": {
+    "CARDIOVASCOLARE": 2.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "DISLIPIDEMIA",
+   "tod_er": 0,
+   "ascvd": 0,
+   "dcsi": {
+    "CARDIOVASCOLARE": 1.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Documentata ECG",
+   "tod_er": 0,
+   "ascvd": 0,
+   "dcsi": {
+    "CARDIOVASCOLARE": 1.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Documentata Ecocardiogramma",
+   "tod_er": 0,
+   "ascvd": 0,
+   "dcsi": {
+    "CARDIOVASCOLARE": 1.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "ELETTROCARDIOGRAMMA",
+   "tod_er": 0,
+   "ascvd": 0,
+   "dcsi": {
+    "CARDIOVASCOLARE": 1.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Fibrillazione e flutter atriali [427.3]",
+   "tod_er": 0,
+   "ascvd": 0,
+   "dcsi": {
+    "CARDIOVASCOLARE": 1.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Infarto miocardico acuto",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "CARDIOVASCOLARE": 2.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Infarto miocardico pregresso",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "CARDIOVASCOLARE": 1.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Insufficienza Cardiaca",
+   "tod_er": 0,
+   "ascvd": 0,
+   "dcsi": {
+    "CARDIOVASCOLARE": 2.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Interventi sui vasi del cuore",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "CARDIOVASCOLARE": 2.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Ipertensione Arteriosa (riscontro per 3-6 mesi di valori PAO >130/86 mmHg)",
+   "tod_er": 0,
+   "ascvd": 0,
+   "dcsi": {
+    "CARDIOVASCOLARE": 1.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Ipertrofia Ventricolare Sinistra",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "CARDIOVASCOLARE": 1.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "patologico",
+   "tod_er": 0,
+   "ascvd": 0,
+   "dcsi": {
+    "CARDIOVASCOLARE": 1.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Rimozione di ostruzione di arteria coronarica ed inserzione di stent",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "CARDIOVASCOLARE": 2.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Rivascolarizzazione",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "CARDIOVASCOLARE": 2.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Stadio II (insufficienza ventricolare sinistra o aterosclerosi o microalbum.)",
+   "tod_er": 2,
+   "ascvd": 1,
+   "dcsi": {
+    "CARDIOVASCOLARE": 1.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Stadio III (danno d'organo conclamato)",
+   "tod_er": 2,
+   "ascvd": 1,
+   "dcsi": {
+    "CARDIOVASCOLARE": 2.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Stemi",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "CARDIOVASCOLARE": 2.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Stent Coronarico",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "CARDIOVASCOLARE": 2.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "Trombolisi",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "CARDIOVASCOLARE": 2.0
+   }
+  },
+  {
+   "macroarea": "Nervi periferici",
+   "voce": "Anestetica",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "NEUROPATIA": 1.0
+   }
+  },
+  {
+   "macroarea": "Nervi periferici",
+   "voce": "Complicata ( da Ulcera, Gangrena, Charcot, Amputazioni)",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "NEUROPATIA": 2.0
+   }
+  },
+  {
+   "macroarea": "Nervi periferici",
+   "voce": "Dolorosa",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "NEUROPATIA": 1.0
+   }
+  },
+  {
+   "macroarea": "Nervi periferici",
+   "voce": "Mononeuropatia",
+   "tod_er": 1,
+   "ascvd": 0,
+   "dcsi": {
+    "NEUROPATIA": 1.0
+   }
+  },
+  {
+   "macroarea": "Nervi periferici",
+   "voce": "Multineuropatia",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "NEUROPATIA": 1.0
+   }
+  },
+  {
+   "macroarea": "Nervi periferici",
+   "voce": "Neuropatia Autonomica",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "NEUROPATIA": 1.0
+   }
+  },
+  {
+   "macroarea": "Nervi periferici",
+   "voce": "Neuropatie asimmetriche",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "NEUROPATIA": 1.0
+   }
+  },
+  {
+   "macroarea": "Nervi periferici",
+   "voce": "Polineuropatia sensitivo motoria simmetrica distale",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "NEUROPATIA": 1.0
+   }
+  },
+  {
+   "macroarea": "Nervi periferici",
+   "voce": "Radicolopatia",
+   "tod_er": 0,
+   "ascvd": 0,
+   "dcsi": {
+    "NEUROPATIA": 1.0
+   }
+  },
+  {
+   "macroarea": "Nervi periferici",
+   "voce": "Sintomatica",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "NEUROPATIA": 1.0
+   }
+  },
+  {
+   "macroarea": "Nervi periferici",
+   "voce": "Solo alterazioni neurofisiologiche",
+   "tod_er": 1,
+   "ascvd": 0,
+   "dcsi": {}
+  },
+  {
+   "macroarea": "Occhio",
+   "voce": "aree ischemiche",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "OCULISTICA": 1.0
+   }
+  },
+  {
+   "macroarea": "Occhio",
+   "voce": "bioculare",
+   "tod_er": 0,
+   "ascvd": 0,
+   "dcsi": {
+    "OCULISTICA": 1.0
+   }
+  },
+  {
+   "macroarea": "Occhio",
+   "voce": "Cataratta",
+   "tod_er": 1,
+   "ascvd": 0,
+   "dcsi": {}
+  },
+  {
+   "macroarea": "Occhio",
+   "voce": "Cecità",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "OCULISTICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Occhio",
+   "voce": "Cecità da diabete",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "OCULISTICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Occhio",
+   "voce": "edematosa",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "OCULISTICA": 1.0
+   }
+  },
+  {
+   "macroarea": "Occhio",
+   "voce": "essudati duri",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "OCULISTICA": 1.0
+   }
+  },
+  {
+   "macroarea": "Occhio",
+   "voce": "IRMA",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "OCULISTICA": 1.0
+   }
+  },
+  {
+   "macroarea": "Occhio",
+   "voce": "laser trattata",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "OCULISTICA": 1.0
+   }
+  },
+  {
+   "macroarea": "Occhio",
+   "voce": "Maculopatia Diabetica",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "OCULISTICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Occhio",
+   "voce": "microaneurismi e/o microemorragie",
+   "tod_er": 1,
+   "ascvd": 0,
+   "dcsi": {
+    "OCULISTICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Occhio",
+   "voce": "monooculare",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "OCULISTICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Occhio",
+   "voce": "Oftalmopatia Diabetica Avanzata",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "OCULISTICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Occhio",
+   "voce": "Patologica",
+   "tod_er": 0,
+   "ascvd": 0,
+   "dcsi": {
+    "OCULISTICA": 1.0
+   }
+  },
+  {
+   "macroarea": "Occhio",
+   "voce": "patologico",
+   "tod_er": 0,
+   "ascvd": 0,
+   "dcsi": {
+    "OCULISTICA": 1.0
+   }
+  },
+  {
+   "macroarea": "Occhio",
+   "voce": "PRP",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "OCULISTICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Occhio",
+   "voce": "Retinopatia Diabetica Laser trattata",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "OCULISTICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Occhio",
+   "voce": "Retinopatia Diabetica non Proliferante",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "OCULISTICA": 1.0
+   }
+  },
+  {
+   "macroarea": "Occhio",
+   "voce": "Retinopatia Diabetica Preproliferante",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "OCULISTICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Occhio",
+   "voce": "Retinopatia Diabetica Proliferante",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "OCULISTICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Occhio",
+   "voce": "Retinopatia Ipertensiva",
+   "tod_er": 0,
+   "ascvd": 0,
+   "dcsi": {
+    "OCULISTICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Occhio",
+   "voce": "Trapianto di cornea",
+   "tod_er": 0,
+   "ascvd": 0,
+   "dcsi": {
+    "OCULISTICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "0A lesione pre- o postulcerativa completamente riepitelizzata",
+   "tod_er": 1,
+   "ascvd": 0,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 1.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "0B lesione pre- o postulcerativa completamente riepitelizzata con infezione",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "Amputazione",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "Amputazione a livello del piede",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "Amputazione al di sopra del ginocchio",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "Amputazione di dita del piede",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "Aterosclerosi delle arterie native degli arti con gangrena",
+   "tod_er": 2,
+   "ascvd": 1,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "Dx.",
+   "tod_er": 0,
+   "ascvd": 0,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "Gangrena",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "IA lesione superficiale non coinvolgente tendini capsule e ossa",
+   "tod_er": 1,
+   "ascvd": 0,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 1.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "IB lesione superficiale non coinvolgente tendini capsule e ossa con infezione",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "IC lesione superficiale non coinvolgente tendini capsule e ossa con ischemia",
+   "tod_er": 2,
+   "ascvd": 1,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "ID lesione superficiale non coinvolgente tendini capsule e ossa con infezione e ischemia",
+   "tod_er": 2,
+   "ascvd": 1,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "IIA lesione interessante tendini o capsule",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 1.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "IIB lesione interessante tendini o capsule con infezione",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "IIC lesione interessante tendini o capsule con ischemia",
+   "tod_er": 2,
+   "ascvd": 1,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "IID lesione interessante tendini o capsule con infezione e ischemia",
+   "tod_er": 2,
+   "ascvd": 1,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "IIIA lesione interessante ossa e articolazioni",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 1.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "IIIB lesione interessante ossa e articolazioni con infezione",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "IIIC lesione interessante ossa e articolazioni con ischemia",
+   "tod_er": 2,
+   "ascvd": 1,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "IIID lesione interessante ossa e articolazioni con infezione e ischemia",
+   "tod_er": 2,
+   "ascvd": 1,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "In atto",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "Infezioni  della pelle e del tessuto sottocutaneo",
+   "tod_er": 0,
+   "ascvd": 0,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 1.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "Maggiore",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 1.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "Minore",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 1.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "Osteomielite / osteopatia di Charcot / periostite",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "Osteomielite acuta,ossa del piede",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "Piede Deformato (dita a martello,dita ad artiglio,alluce valgo,teste metatarsali prominenti.....)",
+   "tod_er": 1,
+   "ascvd": 0,
+   "dcsi": {}
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "Piede Misto",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 1.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "Piede Neuropatico",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 1.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "Piede Vasculopatico",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 1.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "Pregressa ( assenza al momento dell'osservazione ,di una lesione a tutto spessore)",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 1.0
+   }
+  },
+  {
+   "macroarea": "Piede",
+   "voce": "Ulcera",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 1.0
+   }
+  },
+  {
+   "macroarea": "Rene",
+   "voce": "Dialisi peritoneale",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "NEFROPATIA": 2.0
+   }
+  },
+  {
+   "macroarea": "Rene",
+   "voce": "Emodialisi",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "NEFROPATIA": 2.0
+   }
+  },
+  {
+   "macroarea": "Rene",
+   "voce": "Insufficienza Renale cronica",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "NEFROPATIA": 2.0
+   }
+  },
+  {
+   "macroarea": "Rene",
+   "voce": "Macroalbuminuria (>300 mg/24 h o >200 µg/min o >300 mg/g creatinina o >30 mg/mmol creatinina)",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "NEFROPATIA": 1.0
+   }
+  },
+  {
+   "macroarea": "Rene",
+   "voce": "Microalbuminuria (30 -300 mg/24 h o 20 -200 µg/min o 30 -300 mg/g creatinina o 3 -30 mg/mmol creatinina)",
+   "tod_er": 1,
+   "ascvd": 0,
+   "dcsi": {
+    "NEFROPATIA": 1.0
+   }
+  },
+  {
+   "macroarea": "Rene",
+   "voce": "Procedure Dialisi",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "NEFROPATIA": 2.0
+   }
+  },
+  {
+   "macroarea": "Rene",
+   "voce": "Trapianto",
+   "tod_er": 2,
+   "ascvd": 0,
+   "dcsi": {
+    "NEFROPATIA": 2.0
+   }
+  },
+  {
+   "macroarea": "SNC e Vasi cerebrali",
+   "voce": "Angioplastica o aterectomia di altro/i vaso/i non coronarico/i",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "NEUROPATIA": 2.0
+   }
+  },
+  {
+   "macroarea": "SNC e Vasi cerebrali",
+   "voce": "Ateromasia vasi epiaortici",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "NEUROPATIA": 1.0
+   }
+  },
+  {
+   "macroarea": "SNC e Vasi cerebrali",
+   "voce": "con esiti funzionali",
+   "tod_er": 0,
+   "ascvd": 0,
+   "dcsi": {
+    "NEUROPATIA": 1.0
+   }
+  },
+  {
+   "macroarea": "SNC e Vasi cerebrali",
+   "voce": "Con stenosi <60%",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "NEUROPATIA": 1.0
+   }
+  },
+  {
+   "macroarea": "SNC e Vasi cerebrali",
+   "voce": "Con stenosi >60 %",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "NEUROPATIA": 2.0
+   }
+  },
+  {
+   "macroarea": "SNC e Vasi cerebrali",
+   "voce": "Demenza(senile.aterosclerotica)",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "NEUROPATIA": 2.0
+   }
+  },
+  {
+   "macroarea": "SNC e Vasi cerebrali",
+   "voce": "Emorragico",
+   "tod_er": 0,
+   "ascvd": 0,
+   "dcsi": {
+    "NEUROPATIA": 2.0
+   }
+  },
+  {
+   "macroarea": "SNC e Vasi cerebrali",
+   "voce": "Encefalopatia multi infartuale",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "NEUROPATIA": 2.0
+   }
+  },
+  {
+   "macroarea": "SNC e Vasi cerebrali",
+   "voce": "Endoarteriectomia di altri vasi del capo e del collo",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "NEUROPATIA": 2.0
+   }
+  },
+  {
+   "macroarea": "SNC e Vasi cerebrali",
+   "voce": "Ictus (sintomatologia superiore alle 72 h)",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "NEUROPATIA": 2.0
+   }
+  },
+  {
+   "macroarea": "SNC e Vasi cerebrali",
+   "voce": "Interventi su vasi cerebrali e del collo",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "NEUROPATIA": 2.0
+   }
+  },
+  {
+   "macroarea": "SNC e Vasi cerebrali",
+   "voce": "Intervento di chirurgia vascolare",
+   "tod_er": 0,
+   "ascvd": 0,
+   "dcsi": {
+    "NEUROPATIA": 2.0
+   }
+  },
+  {
+   "macroarea": "SNC e Vasi cerebrali",
+   "voce": "Ischemico",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "NEUROPATIA": 1.0
+   }
+  },
+  {
+   "macroarea": "SNC e Vasi cerebrali",
+   "voce": "senza esiti funzionali",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "NEUROPATIA": 1.0
+   }
+  },
+  {
+   "macroarea": "SNC e Vasi cerebrali",
+   "voce": "TIA ( sintomatologia di durata inferiore alle 24 h )",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "NEUROPATIA": 1.0
+   }
+  },
+  {
+   "macroarea": "Vasi periferici",
+   "voce": "addominale",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {}
+  },
+  {
+   "macroarea": "Vasi periferici",
+   "voce": "Aneurisma dell'aorta",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {}
+  },
+  {
+   "macroarea": "Vasi periferici",
+   "voce": "Angioplastica",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 1.0
+   }
+  },
+  {
+   "macroarea": "Vasi periferici",
+   "voce": "Arteriopatia obliterante arti inferiori",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 1.0
+   }
+  },
+  {
+   "macroarea": "Vasi periferici",
+   "voce": "By pass periferico",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Vasi periferici",
+   "voce": "con gangrena",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Vasi periferici",
+   "voce": "I Stadio di Leriche-Fontaine ( clinico-strumentale asintomatico )",
+   "tod_er": 1,
+   "ascvd": 1,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 1.0
+   }
+  },
+  {
+   "macroarea": "Vasi periferici",
+   "voce": "II Stadio di Leriche-Fontaine ( claudicatio )",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 1.0
+   }
+  },
+  {
+   "macroarea": "Vasi periferici",
+   "voce": "III Stadio di Leriche-Fontaine ( dolore a riposo )",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Vasi periferici",
+   "voce": "Inserzione di stent non medicato in vaso periferico",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Vasi periferici",
+   "voce": "IV Stadio di Leriche-Fontaine ( lesione trofica )",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Vasi periferici",
+   "voce": "Rivascolarizzazione",
+   "tod_er": 2,
+   "ascvd": 1,
+   "dcsi": {}
+  },
+  {
+   "macroarea": "Vasi periferici",
+   "voce": "Toracico",
+   "tod_er": 2,
+   "ascvd": 1,
+   "dcsi": {
+    "VASCOLARE PERIFERICA": 2.0
+   }
+  },
+  {
+   "macroarea": "Cuore",
+   "voce": "NSTEMI",
+   "tod_er": 0,
+   "ascvd": 1,
+   "dcsi": {
+    "CARDIOVASCOLARE": 2.0
+   }
+  }
+ ]
+}

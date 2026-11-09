@@ -5,6 +5,7 @@ Non è un dispositivo medico, non sostituisce il giudizio clinico, non è valida
 
 ## Contenuto
 - `app.py`: interfaccia multi-esito: checklist degli esiti, orizzonte, modello nucleo/lab/automatico, ingressi richiesti dai soli esiti scelti, terapia con dose (P e numero di principi attivi calcolati dall'app), radar e tabella dei risultati.
+- `complicanze.py`, `complicanze.json`: inserimento guidato di TOD e DCSI. Si scelgono per distretto le complicanze documentate all'indice; TOD_ER_max = massimo dei punti TOD, DCSI = somma dei massimi per dominio, ASCVD pregressa dalla classificazione. Tabelle da `Marcellini_Index_Allegati_v2.xlsx` (nessun dato di pazienti, 137 voci con effetto).
 - `potenze.py`, `potenze.json`: potenza dei principi attivi per dose (copia di `mi/potenze.yaml`, versione 2026-10-31).
 - `motore.py`: calcolo dal file dei modelli.
 - `calcolatore_modelli.json`: solo coefficienti, medie, rischio cumulativo di base, intervalli 1-99 percentile e prestazioni aggregate. Nessun dato per paziente.
