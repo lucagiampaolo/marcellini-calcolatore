@@ -1,0 +1,2011 @@
+{
+ "versione": "1.0",
+ "data_generazione": "2026-11-09",
+ "disclaimer": "Strumento di sola ricerca, non e' un dispositivo medico e non sostituisce il giudizio clinico. Modelli sviluppati su un registro diabetologico monocentrico (registro di Rimini); non validati esternamente. I rischi sono stime di popolazione, con discriminazione da modesta a buona.",
+ "ingressi": {
+  "eta_indice": {
+   "etichetta": "Età",
+   "unita": "anni",
+   "p1": 39.61,
+   "p99": 88.0
+  },
+  "sesso_M": {
+   "etichetta": "Sesso maschile",
+   "unita": "0/1",
+   "p1": 0.0,
+   "p99": 1.0
+  },
+  "TOD_ER_max": {
+   "etichetta": "Danno d'organo (TOD) all'indice",
+   "unita": "punti",
+   "p1": 0.0,
+   "p99": 2.0
+  },
+  "lab_egfr": {
+   "etichetta": "eGFR",
+   "unita": "mL/min/1,73 m²",
+   "p1": 18.999925708770714,
+   "p99": 114.69020797729462
+  },
+  "n_principi_attivi": {
+   "etichetta": "N. principi attivi antidiabetici",
+   "unita": "n",
+   "p1": 1.0,
+   "p99": 4.389999999999873
+  },
+  "durata_dm": {
+   "etichetta": "Durata del diabete",
+   "unita": "anni",
+   "p1": 0.0,
+   "p99": 42.38999999999987
+  },
+  "hba1c_basale": {
+   "etichetta": "HbA1c",
+   "unita": "mmol/mol",
+   "p1": 40.0,
+   "p99": 118.0
+  },
+  "lab_sbp": {
+   "etichetta": "Pressione sistolica",
+   "unita": "mmHg",
+   "p1": 100.0,
+   "p99": 180.0
+  },
+  "lab_colesterolo_tot": {
+   "etichetta": "Colesterolo totale",
+   "unita": "mmol/L",
+   "p1": 2.7835531419705197,
+   "p99": 8.35272821308508
+  },
+  "P": {
+   "etichetta": "Punteggio farmaci P",
+   "unita": "punti",
+   "p1": 7.0,
+   "p99": 57.38999999999987
+  },
+  "dcsi_basale": {
+   "etichetta": "DCSI all'indice",
+   "unita": "punti",
+   "p1": 0.0,
+   "p99": 6.0
+  }
+ },
+ "modelli": [
+  {
+   "id": "morte_surrogata_3a_nucleo",
+   "esito": "morte_surrogata",
+   "etichetta": "Mortalità per tutte le cause",
+   "orizzonte_anni": 3,
+   "coorte": "2019",
+   "modello": "nucleo",
+   "popolazione": "",
+   "n": 3901,
+   "eventi": 450,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 68.30428095360163,
+     "coef": 0.08748031253202335
+    },
+    {
+     "nome": "sesso_M",
+     "media": 0.592924891053576,
+     "coef": 0.2945884111985837
+    },
+    {
+     "nome": "TOD_ER_max",
+     "media": 0.8051781594462958,
+     "coef": 0.29619246374456176
+    }
+   ],
+   "baseline": {
+    "H0": 1.1744032386144387,
+    "c": 2.6895388935839115
+   },
+   "auc_fuori_campione": 0.7671840152486096,
+   "o_su_e_fuori_campione": 1.0117376892652492,
+   "rischio_medio_osservato": 0.12347346582706535,
+   "rischio_medio_previsto": 0.12214176715260146
+  },
+  {
+   "id": "morte_surrogata_3a_lab",
+   "esito": "morte_surrogata",
+   "etichetta": "Mortalità per tutte le cause",
+   "orizzonte_anni": 3,
+   "coorte": "2019",
+   "modello": "lab",
+   "popolazione": "",
+   "n": 3475,
+   "eventi": 401,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 68.59827338129496,
+     "coef": 0.07304392861232634
+    },
+    {
+     "nome": "sesso_M",
+     "media": 0.5870503597122302,
+     "coef": 0.35502836013140904
+    },
+    {
+     "nome": "lab_egfr",
+     "media": 71.28684127730159,
+     "coef": -0.02148696028070843
+    }
+   ],
+   "baseline": {
+    "H0": 1.3923329644458882,
+    "c": 2.926069693615488
+   },
+   "auc_fuori_campione": 0.7823676813710818,
+   "o_su_e_fuori_campione": 1.0071198020437355,
+   "rischio_medio_osservato": 0.12278109657918534,
+   "rischio_medio_previsto": 0.12204382614074691
+  },
+  {
+   "id": "morte_surrogata_5a_nucleo",
+   "esito": "morte_surrogata",
+   "etichetta": "Mortalità per tutte le cause",
+   "orizzonte_anni": 5,
+   "coorte": "2019",
+   "modello": "nucleo",
+   "popolazione": "",
+   "n": 2884,
+   "eventi": 615,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 68.41643550624133,
+     "coef": 0.09129675475579788
+    },
+    {
+     "nome": "sesso_M",
+     "media": 0.5911927877947295,
+     "coef": 0.2908505405852626
+    },
+    {
+     "nome": "TOD_ER_max",
+     "media": 0.9396671289875174,
+     "coef": 0.25341895533484454
+    }
+   ],
+   "baseline": {
+    "H0": 2.194892709740806,
+    "c": 2.6320099057542623
+   },
+   "auc_fuori_campione": 0.7814914604560856,
+   "o_su_e_fuori_campione": 1.0062703174491188,
+   "rischio_medio_osservato": 0.21901879313367756,
+   "rischio_medio_previsto": 0.21765704920387038
+  },
+  {
+   "id": "morte_surrogata_5a_lab",
+   "esito": "morte_surrogata",
+   "etichetta": "Mortalità per tutte le cause",
+   "orizzonte_anni": 5,
+   "coorte": "2019",
+   "modello": "lab",
+   "popolazione": "",
+   "n": 2632,
+   "eventi": 562,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 68.72720364741642,
+     "coef": 0.07598883915446909
+    },
+    {
+     "nome": "sesso_M",
+     "media": 0.5862462006079028,
+     "coef": 0.34392370596794314
+    },
+    {
+     "nome": "lab_egfr",
+     "media": 70.6957933567843,
+     "coef": -0.019764681539608725
+    }
+   ],
+   "baseline": {
+    "H0": 2.723904767516882,
+    "c": 2.8834234711455218
+   },
+   "auc_fuori_campione": 0.7941769872575551,
+   "o_su_e_fuori_campione": 1.005118506118663,
+   "rischio_medio_osservato": 0.21887125897425774,
+   "rischio_medio_previsto": 0.21818665466006967
+  },
+  {
+   "id": "morte_surrogata_10a_nucleo",
+   "esito": "morte_surrogata",
+   "etichetta": "Mortalità per tutte le cause",
+   "orizzonte_anni": 10,
+   "coorte": "globale",
+   "modello": "nucleo",
+   "popolazione": "",
+   "n": 4222,
+   "eventi": 1425,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 64.80151586925628,
+     "coef": 0.09427100021109854
+    },
+    {
+     "nome": "sesso_M",
+     "media": 0.5793462813832307,
+     "coef": 0.21599132953840217
+    },
+    {
+     "nome": "TOD_ER_max",
+     "media": 0.5101847465656087,
+     "coef": 0.13173712687569206
+    }
+   ],
+   "baseline": {
+    "H0": 4.819832903020242,
+    "c": 2.729429510925935
+   },
+   "auc_fuori_campione": 0.7975193051975366,
+   "o_su_e_fuori_campione": 1.017004381416105,
+   "rischio_medio_osservato": 0.35537988349987515,
+   "rischio_medio_previsto": 0.3494798545531383
+  },
+  {
+   "id": "morte_surrogata_10a_lab",
+   "esito": "morte_surrogata",
+   "etichetta": "Mortalità per tutte le cause",
+   "orizzonte_anni": 10,
+   "coorte": "globale",
+   "modello": "lab",
+   "popolazione": "",
+   "n": 1932,
+   "eventi": 655,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 65.80383022774328,
+     "coef": 0.08765074141733598
+    },
+    {
+     "nome": "sesso_M",
+     "media": 0.5734989648033126,
+     "coef": 0.19908341189408793
+    },
+    {
+     "nome": "lab_egfr",
+     "media": 77.20053257240599,
+     "coef": -0.00975556529103354
+    }
+   ],
+   "baseline": {
+    "H0": 5.101962534155895,
+    "c": 2.779722512328149
+   },
+   "auc_fuori_campione": 0.8080586074536861,
+   "o_su_e_fuori_campione": 1.0143302991616616,
+   "rischio_medio_osservato": 0.35789441802450106,
+   "rischio_medio_previsto": 0.3530205272604353
+  },
+  {
+   "id": "dcsi_progressione_3a_nucleo",
+   "esito": "dcsi_progressione",
+   "etichetta": "Progressione del DCSI da 0 a ≥2",
+   "orizzonte_anni": 3,
+   "coorte": "2019",
+   "modello": "nucleo",
+   "popolazione": "solo pazienti con DCSI 0 all'indice",
+   "n": 3498,
+   "eventi": 682,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 63.264150943396224,
+     "coef": 0.04530930289895545
+    },
+    {
+     "nome": "n_principi_attivi",
+     "media": 2.0131503716409376,
+     "coef": 0.18151450135037198
+    },
+    {
+     "nome": "sesso_M",
+     "media": 0.5688965122927387,
+     "coef": 0.5070081090487161
+    }
+   ],
+   "baseline": {
+    "H0": 1.4540177160499002,
+    "c": 1.7903203770683944
+   },
+   "auc_fuori_campione": 0.7113736263001953,
+   "o_su_e_fuori_campione": 0.9928124871733163,
+   "rischio_medio_osservato": 0.24329987516079135,
+   "rischio_medio_previsto": 0.2451715841418435
+  },
+  {
+   "id": "dcsi_progressione_3a_lab",
+   "esito": "dcsi_progressione",
+   "etichetta": "Progressione del DCSI da 0 a ≥2",
+   "orizzonte_anni": 3,
+   "coorte": "2019",
+   "modello": "lab",
+   "popolazione": "solo pazienti con DCSI 0 all'indice",
+   "n": 2708,
+   "eventi": 520,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 63.42023633677991,
+     "coef": 0.013344335821597926
+    },
+    {
+     "nome": "lab_egfr",
+     "media": 81.63635486534827,
+     "coef": -0.02495942139410458
+    },
+    {
+     "nome": "n_principi_attivi",
+     "media": 2.024741506646972,
+     "coef": 0.2291323933073057
+    }
+   ],
+   "baseline": {
+    "H0": 1.8111631288607701,
+    "c": 2.0496154070609753
+   },
+   "auc_fuori_campione": 0.739305832108378,
+   "o_su_e_fuori_campione": 0.988796281048135,
+   "rischio_medio_osservato": 0.23917251701895845,
+   "rischio_medio_previsto": 0.24177648867329207
+  },
+  {
+   "id": "dcsi_progressione_5a_nucleo",
+   "esito": "dcsi_progressione",
+   "etichetta": "Progressione del DCSI da 0 a ≥2",
+   "orizzonte_anni": 5,
+   "coorte": "2019",
+   "modello": "nucleo",
+   "popolazione": "solo pazienti con DCSI 0 all'indice",
+   "n": 1319,
+   "eventi": 339,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 61.855193328279,
+     "coef": 0.042590477056284534
+    },
+    {
+     "nome": "n_principi_attivi",
+     "media": 2.0553449583017436,
+     "coef": 0.1620676031860704
+    },
+    {
+     "nome": "sesso_M",
+     "media": 0.5504169825625473,
+     "coef": 0.2576327294293949
+    }
+   ],
+   "baseline": {
+    "H0": 1.3115886427355106,
+    "c": 1.4676260211386851
+   },
+   "auc_fuori_campione": 0.6953701240315482,
+   "o_su_e_fuori_campione": 0.9838143146704184,
+   "rischio_medio_osservato": 0.2829347523993877,
+   "rischio_medio_previsto": 0.2873545364557106
+  },
+  {
+   "id": "dcsi_progressione_5a_lab",
+   "esito": "dcsi_progressione",
+   "etichetta": "Progressione del DCSI da 0 a ≥2",
+   "orizzonte_anni": 5,
+   "coorte": "2019",
+   "modello": "lab",
+   "popolazione": "solo pazienti con DCSI 0 all'indice",
+   "n": 1039,
+   "eventi": 264,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 61.99711260827719,
+     "coef": 0.010526310182969656
+    },
+    {
+     "nome": "lab_egfr",
+     "media": 82.69449119001911,
+     "coef": -0.02934701600815344
+    },
+    {
+     "nome": "n_principi_attivi",
+     "media": 2.1126082771896053,
+     "coef": 0.2432676264335767
+    }
+   ],
+   "baseline": {
+    "H0": 2.9805426290967736,
+    "c": 2.3471277893490097
+   },
+   "auc_fuori_campione": 0.7349751852786945,
+   "o_su_e_fuori_campione": 0.9685577783236365,
+   "rischio_medio_osservato": 0.2780832570826587,
+   "rischio_medio_previsto": 0.28717550908705053
+  },
+  {
+   "id": "dcsi_progressione_10a_nucleo",
+   "esito": "dcsi_progressione",
+   "etichetta": "Progressione del DCSI da 0 a ≥2",
+   "orizzonte_anni": 10,
+   "coorte": "globale",
+   "modello": "nucleo",
+   "popolazione": "solo pazienti con DCSI 0 all'indice",
+   "n": 2528,
+   "eventi": 1146,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 62.183148734177216,
+     "coef": 0.02861865892652114
+    },
+    {
+     "nome": "n_principi_attivi",
+     "media": 1.762262658227848,
+     "coef": 0.4410246164956694
+    },
+    {
+     "nome": "sesso_M",
+     "media": 0.5557753164556962,
+     "coef": 0.30316777787047205
+    }
+   ],
+   "baseline": {
+    "H0": 3.960557842105577,
+    "c": 1.7863042799100388
+   },
+   "auc_fuori_campione": 0.7001587179613925,
+   "o_su_e_fuori_campione": 0.9901217313273946,
+   "rischio_medio_osservato": 0.49420802839284705,
+   "rischio_medio_previsto": 0.4988438925916857
+  },
+  {
+   "id": "dcsi_progressione_10a_lab",
+   "esito": "dcsi_progressione",
+   "etichetta": "Progressione del DCSI da 0 a ≥2",
+   "orizzonte_anni": 10,
+   "coorte": "globale",
+   "modello": "lab",
+   "popolazione": "solo pazienti con DCSI 0 all'indice",
+   "n": 1060,
+   "eventi": 463,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 62.806603773584904,
+     "coef": 0.010151726165450072
+    },
+    {
+     "nome": "lab_egfr",
+     "media": 83.59040705342525,
+     "coef": -0.019904103946772642
+    },
+    {
+     "nome": "n_principi_attivi",
+     "media": 1.740566037735849,
+     "coef": 0.4236495649203237
+    }
+   ],
+   "baseline": {
+    "H0": 4.255638211398178,
+    "c": 1.9223760636239398
+   },
+   "auc_fuori_campione": 0.7170590498977311,
+   "o_su_e_fuori_campione": 0.9868967108579393,
+   "rischio_medio_osservato": 0.47404540758140756,
+   "rischio_medio_previsto": 0.48094799563098706
+  },
+  {
+   "id": "oculistica_inc_3a_nucleo",
+   "esito": "oculistica_inc",
+   "etichetta": "Comparsa di complicanza oculare",
+   "orizzonte_anni": 3,
+   "coorte": "2019",
+   "modello": "nucleo",
+   "popolazione": "",
+   "n": 2835,
+   "eventi": 97,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 67.54885361552029,
+     "coef": -0.018332978120980482
+    },
+    {
+     "nome": "durata_dm",
+     "media": 11.202116402116403,
+     "coef": 0.04161042293810705
+    },
+    {
+     "nome": "hba1c_basale",
+     "media": 63.13478220687839,
+     "coef": 0.027375202160555005
+    }
+   ],
+   "baseline": {
+    "H0": 0.7471524216815927,
+    "c": 3.208383091272978
+   },
+   "auc_fuori_campione": 0.6867549340655004,
+   "o_su_e_fuori_campione": 0.9961383287524721,
+   "rischio_medio_osservato": 0.03648011296724095,
+   "rischio_medio_previsto": 0.03656556897041802
+  },
+  {
+   "id": "oculistica_inc_3a_lab",
+   "esito": "oculistica_inc",
+   "etichetta": "Comparsa di complicanza oculare",
+   "orizzonte_anni": 3,
+   "coorte": "2019",
+   "modello": "lab",
+   "popolazione": "",
+   "n": 2202,
+   "eventi": 73,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 67.20708446866485,
+     "coef": -0.016366914067675795
+    },
+    {
+     "nome": "durata_dm",
+     "media": 11.247502270663034,
+     "coef": 0.03561221695999552
+    },
+    {
+     "nome": "hba1c_basale",
+     "media": 62.27790517919611,
+     "coef": 0.0343696985366577
+    },
+    {
+     "nome": "lab_sbp",
+     "media": 134.2851952770209,
+     "coef": 0.011112811755038084
+    },
+    {
+     "nome": "lab_colesterolo_tot",
+     "media": 4.36408869196891,
+     "coef": -0.21377525029490724
+    }
+   ],
+   "baseline": {
+    "H0": 1.2039637318804441,
+    "c": 3.796115507370886
+   },
+   "auc_fuori_campione": 0.717068482262078,
+   "o_su_e_fuori_campione": 1.0080106974580838,
+   "rischio_medio_osservato": 0.035288255749601545,
+   "rischio_medio_previsto": 0.03510833649411529
+  },
+  {
+   "id": "oculistica_inc_5a_nucleo",
+   "esito": "oculistica_inc",
+   "etichetta": "Comparsa di complicanza oculare",
+   "orizzonte_anni": 5,
+   "coorte": "2019",
+   "modello": "nucleo",
+   "popolazione": "",
+   "n": 2018,
+   "eventi": 121,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 67.52031714568881,
+     "coef": -0.016234625943790836
+    },
+    {
+     "nome": "durata_dm",
+     "media": 11.58820614469772,
+     "coef": 0.04296829511435463
+    },
+    {
+     "nome": "hba1c_basale",
+     "media": 63.16853248265609,
+     "coef": 0.020651058814052478
+    }
+   ],
+   "baseline": {
+    "H0": 0.9483609835822793,
+    "c": 2.8401920982526296
+   },
+   "auc_fuori_campione": 0.6739818949247911,
+   "o_su_e_fuori_campione": 1.005976127255682,
+   "rischio_medio_osservato": 0.06165426136923361,
+   "rischio_medio_previsto": 0.06143680948798294
+  },
+  {
+   "id": "oculistica_inc_5a_lab",
+   "esito": "oculistica_inc",
+   "etichetta": "Comparsa di complicanza oculare",
+   "orizzonte_anni": 5,
+   "coorte": "2019",
+   "modello": "lab",
+   "popolazione": "",
+   "n": 1638,
+   "eventi": 98,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 67.12698412698413,
+     "coef": -0.020976092123467176
+    },
+    {
+     "nome": "durata_dm",
+     "media": 11.648962148962148,
+     "coef": 0.04837981472170047
+    },
+    {
+     "nome": "hba1c_basale",
+     "media": 62.26862026862027,
+     "coef": 0.021516896360818438
+    },
+    {
+     "nome": "lab_sbp",
+     "media": 134.72039072039072,
+     "coef": 0.013888336826595618
+    },
+    {
+     "nome": "lab_colesterolo_tot",
+     "media": 4.288233962399983,
+     "coef": -0.218772225799312
+    }
+   ],
+   "baseline": {
+    "H0": 1.5476044767666803,
+    "c": 3.407192647914416
+   },
+   "auc_fuori_campione": 0.6947698326682401,
+   "o_su_e_fuori_campione": 1.0061109087817461,
+   "rischio_medio_osservato": 0.061223713372912957,
+   "rischio_medio_previsto": 0.060552276036837535
+  },
+  {
+   "id": "oculistica_inc_10a_nucleo",
+   "esito": "oculistica_inc",
+   "etichetta": "Comparsa di complicanza oculare",
+   "orizzonte_anni": 10,
+   "coorte": "globale",
+   "modello": "nucleo",
+   "popolazione": "",
+   "n": 2626,
+   "eventi": 501,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 64.81987814166033,
+     "coef": -0.02411511612268571
+    },
+    {
+     "nome": "durata_dm",
+     "media": 8.292840822543793,
+     "coef": 0.06274618835151544
+    },
+    {
+     "nome": "hba1c_basale",
+     "media": 71.23481152821851,
+     "coef": 0.010963380705719356
+    }
+   ],
+   "baseline": {
+    "H0": 2.5035094659048944,
+    "c": 2.5600762157008106
+   },
+   "auc_fuori_campione": 0.6873701334524469,
+   "o_su_e_fuori_campione": 1.0000625541969264,
+   "rischio_medio_osservato": 0.19717362849260803,
+   "rischio_medio_previsto": 0.1969409854139161
+  },
+  {
+   "id": "oculistica_inc_10a_lab",
+   "esito": "oculistica_inc",
+   "etichetta": "Comparsa di complicanza oculare",
+   "orizzonte_anni": 10,
+   "coorte": "globale",
+   "modello": "lab",
+   "popolazione": "",
+   "n": 1533,
+   "eventi": 268,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 64.05609915198956,
+     "coef": -0.025592965837410817
+    },
+    {
+     "nome": "durata_dm",
+     "media": 7.798434442270059,
+     "coef": 0.06376081710699393
+    },
+    {
+     "nome": "hba1c_basale",
+     "media": 72.69394226019382,
+     "coef": 0.013239113449885289
+    },
+    {
+     "nome": "lab_sbp",
+     "media": 134.24592302674495,
+     "coef": 0.011182697543297043
+    },
+    {
+     "nome": "lab_colesterolo_tot",
+     "media": 4.987305399645856,
+     "coef": -0.04674650121262156
+    }
+   ],
+   "baseline": {
+    "H0": 2.1810226805568265,
+    "c": 2.5457551277813137
+   },
+   "auc_fuori_campione": 0.7053672627505598,
+   "o_su_e_fuori_campione": 0.9970044251824421,
+   "rischio_medio_osservato": 0.1816408741512056,
+   "rischio_medio_previsto": 0.1813083551417443
+  },
+  {
+   "id": "tod_3a_nucleo",
+   "esito": "tod",
+   "etichetta": "Danno d'organo incidente (TOD)",
+   "orizzonte_anni": 3,
+   "coorte": "2019",
+   "modello": "nucleo",
+   "popolazione": "",
+   "n": 3881,
+   "eventi": 601,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 68.38675599072404,
+     "coef": 0.012403809776166364
+    },
+    {
+     "nome": "P",
+     "media": 27.753671734089153,
+     "coef": 0.01821492060395417
+    },
+    {
+     "nome": "durata_dm",
+     "media": 13.115434166451946,
+     "coef": -0.008964222604321488
+    }
+   ],
+   "baseline": {
+    "H0": 0.38804099829137084,
+    "c": 0.7994182897947775
+   },
+   "auc_fuori_campione": 0.5545706794829571,
+   "o_su_e_fuori_campione": 1.0045302544913215,
+   "rischio_medio_osservato": 0.16402166559826634,
+   "rischio_medio_previsto": 0.16332246146702206
+  },
+  {
+   "id": "tod_3a_lab",
+   "esito": "tod",
+   "etichetta": "Danno d'organo incidente (TOD)",
+   "orizzonte_anni": 3,
+   "coorte": "2019",
+   "modello": "lab",
+   "popolazione": "",
+   "n": 7179,
+   "eventi": 1079,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 68.04471374843293,
+     "coef": -0.0014164101842275042
+    },
+    {
+     "nome": "lab_egfr",
+     "media": 72.74062037620494,
+     "coef": -0.012913067030711654
+    },
+    {
+     "nome": "n_principi_attivi",
+     "media": 2.2257974648279704,
+     "coef": 0.17427151056376222
+    }
+   ],
+   "baseline": {
+    "H0": 0.5046073683903285,
+    "c": 1.0051823969327476
+   },
+   "auc_fuori_campione": 0.5934416522275705,
+   "o_su_e_fuori_campione": 1.0053461464569788,
+   "rischio_medio_osservato": 0.17637535043547026,
+   "rischio_medio_previsto": 0.1754899544970343
+  },
+  {
+   "id": "tod_5a_nucleo",
+   "esito": "tod",
+   "etichetta": "Danno d'organo incidente (TOD)",
+   "orizzonte_anni": 5,
+   "coorte": "2019",
+   "modello": "nucleo",
+   "popolazione": "",
+   "n": 2875,
+   "eventi": 609,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 68.488,
+     "coef": 0.007885990180878107
+    },
+    {
+     "nome": "P",
+     "media": 29.365565217391303,
+     "coef": 0.02209560166450614
+    },
+    {
+     "nome": "durata_dm",
+     "media": 13.795478260869565,
+     "coef": -0.008257857688925731
+    }
+   ],
+   "baseline": {
+    "H0": 0.561864190727979,
+    "c": 0.8578610082526198
+   },
+   "auc_fuori_campione": 0.5652354704172912,
+   "o_su_e_fuori_campione": 1.0041692308231558,
+   "rischio_medio_osservato": 0.21717323214696171,
+   "rischio_medio_previsto": 0.2166486924706436
+  },
+  {
+   "id": "tod_5a_lab",
+   "esito": "tod",
+   "etichetta": "Danno d'organo incidente (TOD)",
+   "orizzonte_anni": 5,
+   "coorte": "2019",
+   "modello": "lab",
+   "popolazione": "",
+   "n": 4209,
+   "eventi": 916,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 68.66120218579235,
+     "coef": -0.000995592332797744
+    },
+    {
+     "nome": "lab_egfr",
+     "media": 70.79338097480075,
+     "coef": -0.00714444939589957
+    },
+    {
+     "nome": "n_principi_attivi",
+     "media": 2.3499643620812543,
+     "coef": 0.1878453966622071
+    }
+   ],
+   "baseline": {
+    "H0": 0.5234327142108764,
+    "c": 0.6961161523713583
+   },
+   "auc_fuori_campione": 0.5708761713280818,
+   "o_su_e_fuori_campione": 0.9991215523252236,
+   "rischio_medio_osservato": 0.23320043968499202,
+   "rischio_medio_previsto": 0.2333788785903134
+  },
+  {
+   "id": "tod_10a_nucleo",
+   "esito": "tod",
+   "etichetta": "Danno d'organo incidente (TOD)",
+   "orizzonte_anni": 10,
+   "coorte": "globale",
+   "modello": "nucleo",
+   "popolazione": "",
+   "n": 4105,
+   "eventi": 1928,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 65.01023142509135,
+     "coef": 0.002462993446748313
+    },
+    {
+     "nome": "P",
+     "media": 22.269427527405604,
+     "coef": 0.029717944578398436
+    },
+    {
+     "nome": "durata_dm",
+     "media": 9.184409257003654,
+     "coef": 0.018547174017503994
+    }
+   ],
+   "baseline": {
+    "H0": 2.880398246415109,
+    "c": 1.4912109111683272
+   },
+   "auc_fuori_campione": 0.6571184154412014,
+   "o_su_e_fuori_campione": 1.0011762638749462,
+   "rischio_medio_osservato": 0.4853078063896676,
+   "rischio_medio_previsto": 0.4850028447527618
+  },
+  {
+   "id": "tod_10a_lab",
+   "esito": "tod",
+   "etichetta": "Danno d'organo incidente (TOD)",
+   "orizzonte_anni": 10,
+   "coorte": "globale",
+   "modello": "lab",
+   "popolazione": "",
+   "n": 2591,
+   "eventi": 1097,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 66.19374758780394,
+     "coef": -0.0006434558037993219
+    },
+    {
+     "nome": "lab_egfr",
+     "media": 76.54000359632842,
+     "coef": -0.007504591447620448
+    },
+    {
+     "nome": "n_principi_attivi",
+     "media": 1.7869548436896951,
+     "coef": 0.474973965524246
+    }
+   ],
+   "baseline": {
+    "H0": 2.9384168293498183,
+    "c": 1.582824773179241
+   },
+   "auc_fuori_campione": 0.6556922213259988,
+   "o_su_e_fuori_campione": 0.9931328918572683,
+   "rischio_medio_osservato": 0.4588056100230418,
+   "rischio_medio_previsto": 0.4618465789896582
+  },
+  {
+   "id": "composito_nonfatale_3a_nucleo",
+   "esito": "composito_nonfatale",
+   "etichetta": "ASCVD o danno d'organo (non fatale)",
+   "orizzonte_anni": 3,
+   "coorte": "2019",
+   "modello": "nucleo",
+   "popolazione": "solo pazienti senza ASCVD pregressa",
+   "n": 4686,
+   "eventi": 1278,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 65.06572769953051,
+     "coef": 0.020369312368739644
+    },
+    {
+     "nome": "P",
+     "media": 25.158130601792575,
+     "coef": 0.0053902758125884956
+    },
+    {
+     "nome": "hba1c_basale",
+     "media": 66.13252978714219,
+     "coef": 0.0036977493618355643
+    }
+   ],
+   "baseline": {
+    "H0": 1.0840548873205653,
+    "c": 1.0298212702205891
+   },
+   "auc_fuori_campione": 0.5926763532101424,
+   "o_su_e_fuori_campione": 1.000129723698145,
+   "rischio_medio_osservato": 0.32709287934772074,
+   "rischio_medio_previsto": 0.327051137231458
+  },
+  {
+   "id": "composito_nonfatale_3a_lab",
+   "esito": "composito_nonfatale",
+   "etichetta": "ASCVD o danno d'organo (non fatale)",
+   "orizzonte_anni": 3,
+   "coorte": "2019",
+   "modello": "lab",
+   "popolazione": "solo pazienti senza ASCVD pregressa",
+   "n": 4450,
+   "eventi": 1229,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 65.2970786516854,
+     "coef": 0.010638878562527862
+    },
+    {
+     "nome": "lab_egfr",
+     "media": 77.64355268292833,
+     "coef": -0.006120541265097385
+    },
+    {
+     "nome": "n_principi_attivi",
+     "media": 2.1303370786516855,
+     "coef": 0.16215011861714368
+    }
+   ],
+   "baseline": {
+    "H0": 0.9273863542597995,
+    "c": 0.8698025831913505
+   },
+   "auc_fuori_campione": 0.6006435456322047,
+   "o_su_e_fuori_campione": 1.0014485004992968,
+   "rischio_medio_osservato": 0.32925819919620086,
+   "rischio_medio_previsto": 0.328668495004031
+  },
+  {
+   "id": "composito_nonfatale_5a_nucleo",
+   "esito": "composito_nonfatale",
+   "etichetta": "ASCVD o danno d'organo (non fatale)",
+   "orizzonte_anni": 5,
+   "coorte": "2019",
+   "modello": "nucleo",
+   "popolazione": "solo pazienti senza ASCVD pregressa",
+   "n": 2276,
+   "eventi": 863,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 64.82732864674868,
+     "coef": 0.015682908238518443
+    },
+    {
+     "nome": "P",
+     "media": 27.381810193321616,
+     "coef": 0.009427865220042353
+    },
+    {
+     "nome": "hba1c_basale",
+     "media": 65.00476847539542,
+     "coef": 0.004983407291557963
+    }
+   ],
+   "baseline": {
+    "H0": 1.1904472873744465,
+    "c": 0.8383922971673912
+   },
+   "auc_fuori_campione": 0.5876982656685533,
+   "o_su_e_fuori_campione": 0.9960428070441745,
+   "rischio_medio_osservato": 0.40574512373707383,
+   "rischio_medio_previsto": 0.4072577018079633
+  },
+  {
+   "id": "composito_nonfatale_5a_lab",
+   "esito": "composito_nonfatale",
+   "etichetta": "ASCVD o danno d'organo (non fatale)",
+   "orizzonte_anni": 5,
+   "coorte": "2019",
+   "modello": "lab",
+   "popolazione": "solo pazienti senza ASCVD pregressa",
+   "n": 2186,
+   "eventi": 816,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 65.04208600182983,
+     "coef": 0.009085332423977544
+    },
+    {
+     "nome": "lab_egfr",
+     "media": 77.2523625598901,
+     "coef": -0.003718435293736059
+    },
+    {
+     "nome": "n_principi_attivi",
+     "media": 2.256175663311985,
+     "coef": 0.16807249522072792
+    }
+   ],
+   "baseline": {
+    "H0": 0.9712545069502948,
+    "c": 0.6525902551255791
+   },
+   "auc_fuori_campione": 0.5805368721420351,
+   "o_su_e_fuori_campione": 0.9977048877676544,
+   "rischio_medio_osservato": 0.40032941461176247,
+   "rischio_medio_previsto": 0.4010376048012928
+  },
+  {
+   "id": "composito_nonfatale_10a_nucleo",
+   "esito": "composito_nonfatale",
+   "etichetta": "ASCVD o danno d'organo (non fatale)",
+   "orizzonte_anni": 10,
+   "coorte": "globale",
+   "modello": "nucleo",
+   "popolazione": "solo pazienti senza ASCVD pregressa",
+   "n": 3059,
+   "eventi": 1802,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 64.07028440666885,
+     "coef": 0.012031478495937734
+    },
+    {
+     "nome": "P",
+     "media": 22.673749591369727,
+     "coef": 0.029371647550171142
+    },
+    {
+     "nome": "hba1c_basale",
+     "media": 71.82305374505108,
+     "coef": 0.002343943041100848
+    }
+   ],
+   "baseline": {
+    "H0": 3.780264154846039,
+    "c": 1.3257646235070166
+   },
+   "auc_fuori_campione": 0.6642219888621346,
+   "o_su_e_fuori_campione": 0.9971568153899394,
+   "rischio_medio_osservato": 0.6303397072987622,
+   "rischio_medio_previsto": 0.6320699680831005
+  },
+  {
+   "id": "composito_nonfatale_10a_lab",
+   "esito": "composito_nonfatale",
+   "etichetta": "ASCVD o danno d'organo (non fatale)",
+   "orizzonte_anni": 10,
+   "coorte": "globale",
+   "modello": "lab",
+   "popolazione": "solo pazienti senza ASCVD pregressa",
+   "n": 1876,
+   "eventi": 1070,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 64.50373134328358,
+     "coef": 0.0021062341467196033
+    },
+    {
+     "nome": "lab_egfr",
+     "media": 79.66611124095012,
+     "coef": -0.0071344133245972614
+    },
+    {
+     "nome": "n_principi_attivi",
+     "media": 1.7899786780383795,
+     "coef": 0.41701758209788264
+    }
+   ],
+   "baseline": {
+    "H0": 4.119748958002299,
+    "c": 1.455937100566325
+   },
+   "auc_fuori_campione": 0.6516341141082796,
+   "o_su_e_fuori_campione": 0.9939271221859277,
+   "rischio_medio_osservato": 0.6125060310659017,
+   "rischio_medio_previsto": 0.6165403389271681
+  },
+  {
+   "id": "ascvd_3a_nucleo",
+   "esito": "ascvd",
+   "etichetta": "ASCVD incidente",
+   "orizzonte_anni": 3,
+   "coorte": "2019",
+   "modello": "nucleo",
+   "popolazione": "solo pazienti senza ASCVD pregressa",
+   "n": 4685,
+   "eventi": 899,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 65.06403415154749,
+     "coef": 0.021589962069232808
+    },
+    {
+     "nome": "P",
+     "media": 25.16051227321238,
+     "coef": 0.0036181519529065957
+    },
+    {
+     "nome": "hba1c_basale",
+     "media": 66.13405220545322,
+     "coef": 0.0025039234812190524
+    }
+   ],
+   "baseline": {
+    "H0": 0.6686257357160614,
+    "c": 0.9459454248628578
+   },
+   "auc_fuori_campione": 0.5940652795854975,
+   "o_su_e_fuori_campione": 0.9977738839909324,
+   "rischio_medio_osservato": 0.23400894352431054,
+   "rischio_medio_previsto": 0.23449776463852165
+  },
+  {
+   "id": "ascvd_3a_lab",
+   "esito": "ascvd",
+   "etichetta": "ASCVD incidente",
+   "orizzonte_anni": 3,
+   "coorte": "2019",
+   "modello": "lab",
+   "popolazione": "solo pazienti senza ASCVD pregressa",
+   "n": 4449,
+   "eventi": 864,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 65.29534726904923,
+     "coef": 0.01735816210652085
+    },
+    {
+     "nome": "lab_egfr",
+     "media": 77.64848955152735,
+     "coef": -0.0014006408942880996
+    },
+    {
+     "nome": "n_principi_attivi",
+     "media": 2.1305911440773206,
+     "coef": 0.14198435342233773
+    }
+   ],
+   "baseline": {
+    "H0": 0.5483548923357904,
+    "c": 0.7467701929814365
+   },
+   "auc_fuori_campione": 0.5888913613491635,
+   "o_su_e_fuori_campione": 1.0015573361428485,
+   "rischio_medio_osservato": 0.2348225054198722,
+   "rischio_medio_previsto": 0.23453936997325217
+  },
+  {
+   "id": "ascvd_5a_nucleo",
+   "esito": "ascvd",
+   "etichetta": "ASCVD incidente",
+   "orizzonte_anni": 5,
+   "coorte": "2019",
+   "modello": "nucleo",
+   "popolazione": "solo pazienti senza ASCVD pregressa",
+   "n": 2275,
+   "eventi": 606,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 64.82373626373627,
+     "coef": 0.016455784758634285
+    },
+    {
+     "nome": "P",
+     "media": 27.38769230769231,
+     "coef": 0.007727971753150235
+    },
+    {
+     "nome": "hba1c_basale",
+     "media": 65.00740793406592,
+     "coef": 0.0026549274252420556
+    }
+   ],
+   "baseline": {
+    "H0": 0.6345988850104283,
+    "c": 0.6441500170320331
+   },
+   "auc_fuori_campione": 0.5715188978253721,
+   "o_su_e_fuori_campione": 0.9951162669542193,
+   "rischio_medio_osservato": 0.28648943869838267,
+   "rischio_medio_previsto": 0.2879103049554334
+  },
+  {
+   "id": "ascvd_5a_lab",
+   "esito": "ascvd",
+   "etichetta": "ASCVD incidente",
+   "orizzonte_anni": 5,
+   "coorte": "2019",
+   "modello": "lab",
+   "popolazione": "solo pazienti senza ASCVD pregressa",
+   "n": 2185,
+   "eventi": 578,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 65.03844393592678,
+     "coef": 0.013708811294694269
+    },
+    {
+     "nome": "lab_egfr",
+     "media": 77.26223575818484,
+     "coef": -0.0007876610640220299
+    },
+    {
+     "nome": "n_principi_attivi",
+     "media": 2.25675057208238,
+     "coef": 0.13897306088169084
+    }
+   ],
+   "baseline": {
+    "H0": 0.614395739001106,
+    "c": 0.6176338327981111
+   },
+   "auc_fuori_campione": 0.5630550092745005,
+   "o_su_e_fuori_campione": 0.9968672490381536,
+   "rischio_medio_osservato": 0.2852699450850435,
+   "rischio_medio_previsto": 0.2860219350119362
+  },
+  {
+   "id": "ascvd_10a_nucleo",
+   "esito": "ascvd",
+   "etichetta": "ASCVD incidente",
+   "orizzonte_anni": 10,
+   "coorte": "globale",
+   "modello": "nucleo",
+   "popolazione": "solo pazienti senza ASCVD pregressa",
+   "n": 3059,
+   "eventi": 1246,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 64.07028440666885,
+     "coef": 0.015240857729276077
+    },
+    {
+     "nome": "P",
+     "media": 22.673749591369727,
+     "coef": 0.02448506508712374
+    },
+    {
+     "nome": "hba1c_basale",
+     "media": 71.82305374505108,
+     "coef": 0.0006356878989619925
+    }
+   ],
+   "baseline": {
+    "H0": 1.8109270323526947,
+    "c": 1.133923756015614
+   },
+   "auc_fuori_campione": 0.6185099605283513,
+   "o_su_e_fuori_campione": 0.9936860937564075,
+   "rischio_medio_osservato": 0.44625781036529916,
+   "rischio_medio_previsto": 0.44903400180125747
+  },
+  {
+   "id": "ascvd_10a_lab",
+   "esito": "ascvd",
+   "etichetta": "ASCVD incidente",
+   "orizzonte_anni": 10,
+   "coorte": "globale",
+   "modello": "lab",
+   "popolazione": "solo pazienti senza ASCVD pregressa",
+   "n": 1876,
+   "eventi": 750,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 64.50373134328358,
+     "coef": 0.007316790592433439
+    },
+    {
+     "nome": "lab_egfr",
+     "media": 79.66611124095012,
+     "coef": -0.004762734153403642
+    },
+    {
+     "nome": "n_principi_attivi",
+     "media": 1.7899786780383795,
+     "coef": 0.36144346565325
+    }
+   ],
+   "baseline": {
+    "H0": 2.1608003977393064,
+    "c": 1.3301428275640244
+   },
+   "auc_fuori_campione": 0.614372504509471,
+   "o_su_e_fuori_campione": 0.9912815888736703,
+   "rischio_medio_osservato": 0.43869729185827633,
+   "rischio_medio_previsto": 0.4427734243096943
+  },
+  {
+   "id": "incremento_dcsi2_3a_nucleo",
+   "esito": "incremento_dcsi2",
+   "etichetta": "Aumento del DCSI di almeno 2 punti",
+   "orizzonte_anni": 3,
+   "coorte": "2019",
+   "modello": "nucleo",
+   "popolazione": "",
+   "n": 8558,
+   "eventi": 1176,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 67.71219911194204,
+     "coef": 0.041635513515632695
+    },
+    {
+     "nome": "sesso_M",
+     "media": 0.5960504790838981,
+     "coef": 0.4365195152940143
+    },
+    {
+     "nome": "dcsi_basale",
+     "media": 1.5583080158915634,
+     "coef": -0.40745791598704867
+    }
+   ],
+   "baseline": {
+    "H0": 1.1119567124588032,
+    "c": 1.9890539018968991
+   },
+   "auc_fuori_campione": 0.718204980500479,
+   "o_su_e_fuori_campione": 0.9618625275452068,
+   "rischio_medio_osservato": 0.1631230117268233,
+   "rischio_medio_previsto": 0.16963653251791938
+  },
+  {
+   "id": "incremento_dcsi2_3a_lab",
+   "esito": "incremento_dcsi2",
+   "etichetta": "Aumento del DCSI di almeno 2 punti",
+   "orizzonte_anni": 3,
+   "coorte": "2019",
+   "modello": "lab",
+   "popolazione": "",
+   "n": 7179,
+   "eventi": 949,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 68.04471374843293,
+     "coef": 0.008904134933924515
+    },
+    {
+     "nome": "lab_egfr",
+     "media": 72.74062037620494,
+     "coef": -0.02572330385056783
+    },
+    {
+     "nome": "dcsi_basale",
+     "media": 1.6808747736453544,
+     "coef": -0.4596166030726769
+    }
+   ],
+   "baseline": {
+    "H0": 1.8793003200515614,
+    "c": 2.601336357895836
+   },
+   "auc_fuori_campione": 0.7326656949579227,
+   "o_su_e_fuori_campione": 0.9546791856045628,
+   "rischio_medio_osservato": 0.15538131366301847,
+   "rischio_medio_previsto": 0.1628111980386993
+  },
+  {
+   "id": "incremento_dcsi2_5a_nucleo",
+   "esito": "incremento_dcsi2",
+   "etichetta": "Aumento del DCSI di almeno 2 punti",
+   "orizzonte_anni": 5,
+   "coorte": "2019",
+   "modello": "nucleo",
+   "popolazione": "",
+   "n": 4770,
+   "eventi": 823,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 68.28909853249476,
+     "coef": 0.03077525551865277
+    },
+    {
+     "nome": "sesso_M",
+     "media": 0.5828092243186582,
+     "coef": 0.2930002056800157
+    },
+    {
+     "nome": "dcsi_basale",
+     "media": 2.0863731656184488,
+     "coef": -0.322470685953692
+    }
+   ],
+   "baseline": {
+    "H0": 0.8197862672051327,
+    "c": 1.4939649646762154
+   },
+   "auc_fuori_campione": 0.664804192553238,
+   "o_su_e_fuori_campione": 0.9883891567777301,
+   "rischio_medio_osservato": 0.18633344554599335,
+   "rischio_medio_previsto": 0.18864942079260363
+  },
+  {
+   "id": "incremento_dcsi2_5a_lab",
+   "esito": "incremento_dcsi2",
+   "etichetta": "Aumento del DCSI di almeno 2 punti",
+   "orizzonte_anni": 5,
+   "coorte": "2019",
+   "modello": "lab",
+   "popolazione": "",
+   "n": 4209,
+   "eventi": 706,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 68.66120218579235,
+     "coef": 0.0022808627078596826
+    },
+    {
+     "nome": "lab_egfr",
+     "media": 70.79338097480075,
+     "coef": -0.023937758254279157
+    },
+    {
+     "nome": "dcsi_basale",
+     "media": 2.2064623425991923,
+     "coef": -0.39705768744711534
+    }
+   ],
+   "baseline": {
+    "H0": 1.902273435402082,
+    "c": 2.4119537551154178
+   },
+   "auc_fuori_campione": 0.6809235097749214,
+   "o_su_e_fuori_campione": 0.9776378474737705,
+   "rischio_medio_osservato": 0.1803384947851601,
+   "rischio_medio_previsto": 0.18462753259100584
+  },
+  {
+   "id": "incremento_dcsi2_10a_nucleo",
+   "esito": "incremento_dcsi2",
+   "etichetta": "Aumento del DCSI di almeno 2 punti",
+   "orizzonte_anni": 10,
+   "coorte": "globale",
+   "modello": "nucleo",
+   "popolazione": "",
+   "n": 5804,
+   "eventi": 2460,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 65.4658855961406,
+     "coef": 0.024041123076917602
+    },
+    {
+     "nome": "sesso_M",
+     "media": 0.5733976567884218,
+     "coef": 0.2587468401409059
+    },
+    {
+     "nome": "dcsi_basale",
+     "media": 1.1674707098552721,
+     "coef": -0.16475576517894916
+    }
+   ],
+   "baseline": {
+    "H0": 1.6336405108868381,
+    "c": 0.964680571626032
+   },
+   "auc_fuori_campione": 0.6062242631859722,
+   "o_su_e_fuori_campione": 0.9923670367486933,
+   "rischio_medio_osservato": 0.46585704777255094,
+   "rischio_medio_previsto": 0.4695799375037742
+  },
+  {
+   "id": "incremento_dcsi2_10a_lab",
+   "esito": "incremento_dcsi2",
+   "etichetta": "Aumento del DCSI di almeno 2 punti",
+   "orizzonte_anni": 10,
+   "coorte": "globale",
+   "modello": "lab",
+   "popolazione": "",
+   "n": 2592,
+   "eventi": 1026,
+   "tipo": "fine_gray",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "media": 66.19675925925925,
+     "coef": 0.004084534454991083
+    },
+    {
+     "nome": "lab_egfr",
+     "media": 76.52263373554574,
+     "coef": -0.016753882182378423
+    },
+    {
+     "nome": "dcsi_basale",
+     "media": 1.2746913580246915,
+     "coef": -0.2586813538620645
+    }
+   ],
+   "baseline": {
+    "H0": 2.53871416406948,
+    "c": 1.5075131605124668
+   },
+   "auc_fuori_campione": 0.6154523042849583,
+   "o_su_e_fuori_campione": 0.986396199481493,
+   "rischio_medio_osservato": 0.4355272067176051,
+   "rischio_medio_previsto": 0.4415601962134965
+  },
+  {
+   "id": "hba1c_fuori_target_3a_nucleo",
+   "esito": "hba1c_fuori_target",
+   "etichetta": "HbA1c fuori target a 3 anni",
+   "orizzonte_anni": 3,
+   "coorte": "2019",
+   "modello": "nucleo",
+   "popolazione": "",
+   "n": 2998,
+   "eventi": 1331,
+   "tipo": "logistico",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "coef": -0.021342053517679496
+    },
+    {
+     "nome": "sesso_M",
+     "coef": -0.059466242071109746
+    },
+    {
+     "nome": "hba1c_basale",
+     "coef": 0.011334038164828728
+    },
+    {
+     "nome": "P",
+     "coef": 0.039847300157355145
+    },
+    {
+     "nome": "n_principi_attivi",
+     "coef": 0.03260673148859817
+    }
+   ],
+   "intercetta": -0.7643720193857708,
+   "auc_fuori_campione": 0.671692783907531,
+   "o_su_e_fuori_campione": 0.9998493948258753,
+   "rischio_medio_osservato": 0.4439626417611741,
+   "rischio_medio_previsto": 0.4439304357658337
+  },
+  {
+   "id": "hba1c_fuori_target_3a_lab",
+   "esito": "hba1c_fuori_target",
+   "etichetta": "HbA1c fuori target a 3 anni",
+   "orizzonte_anni": 3,
+   "coorte": "2019",
+   "modello": "lab",
+   "popolazione": "",
+   "n": 2757,
+   "eventi": 1240,
+   "tipo": "logistico",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "coef": -0.02488776409184451
+    },
+    {
+     "nome": "sesso_M",
+     "coef": -0.055495954953174706
+    },
+    {
+     "nome": "hba1c_basale",
+     "coef": 0.013691908914119347
+    },
+    {
+     "nome": "P",
+     "coef": 0.04183089761563613
+    },
+    {
+     "nome": "n_principi_attivi",
+     "coef": -0.010193161798028112
+    },
+    {
+     "nome": "lab_egfr",
+     "coef": -0.002123693918041116
+    }
+   ],
+   "intercetta": -0.451826912001927,
+   "auc_fuori_campione": 0.6727728219958746,
+   "o_su_e_fuori_campione": 0.9982650742412104,
+   "rischio_medio_osservato": 0.44976423648893726,
+   "rischio_medio_previsto": 0.44978148300872567
+  },
+  {
+   "id": "hba1c_fuori_target_5a_nucleo",
+   "esito": "hba1c_fuori_target",
+   "etichetta": "HbA1c fuori target a 5 anni",
+   "orizzonte_anni": 5,
+   "coorte": "2019",
+   "modello": "nucleo",
+   "popolazione": "",
+   "n": 2722,
+   "eventi": 1122,
+   "tipo": "logistico",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "coef": -0.026124570108047602
+    },
+    {
+     "nome": "sesso_M",
+     "coef": 0.04319058657312136
+    },
+    {
+     "nome": "hba1c_basale",
+     "coef": 0.014893954182222367
+    },
+    {
+     "nome": "P",
+     "coef": 0.026386388745420937
+    },
+    {
+     "nome": "n_principi_attivi",
+     "coef": 0.11678167930956489
+    }
+   ],
+   "intercetta": -0.6904769584868422,
+   "auc_fuori_campione": 0.6700632241532976,
+   "o_su_e_fuori_campione": 1.0002013398265,
+   "rischio_medio_osservato": 0.41219691403379866,
+   "rischio_medio_previsto": 0.41219690647872026
+  },
+  {
+   "id": "hba1c_fuori_target_5a_lab",
+   "esito": "hba1c_fuori_target",
+   "etichetta": "HbA1c fuori target a 5 anni",
+   "orizzonte_anni": 5,
+   "coorte": "2019",
+   "modello": "lab",
+   "popolazione": "",
+   "n": 2517,
+   "eventi": 1046,
+   "tipo": "logistico",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "coef": -0.027329383445374944
+    },
+    {
+     "nome": "sesso_M",
+     "coef": 0.0033968252277709046
+    },
+    {
+     "nome": "hba1c_basale",
+     "coef": 0.017405595438134625
+    },
+    {
+     "nome": "P",
+     "coef": 0.02495785850558577
+    },
+    {
+     "nome": "n_principi_attivi",
+     "coef": 0.13080384779257143
+    },
+    {
+     "nome": "lab_egfr",
+     "coef": 0.00014318370525216194
+    }
+   ],
+   "intercetta": -0.7396386268943167,
+   "auc_fuori_campione": 0.6780269402196448,
+   "o_su_e_fuori_campione": 0.9985762121732734,
+   "rischio_medio_osservato": 0.4155740961462058,
+   "rischio_medio_previsto": 0.415591445948794
+  },
+  {
+   "id": "tt_fuori_target_nucleo",
+   "esito": "tt_fuori_target",
+   "etichetta": "Tempo in target (TT) inferiore al 70%",
+   "orizzonte_anni": 3,
+   "coorte": "2019",
+   "modello": "nucleo",
+   "stato": "primario",
+   "requisiti": "Valido solo per pazienti con HbA1c misurata entro il mese 6, almeno 3 misure tra i mesi 6 e 36 e una misura dal mese 36 entro 120 giorni; target 53 mmol/mol sotto gli 80 anni, 64 dagli 80 anni. Il TT e' disponibile soprattutto nei pazienti piu' gravi (bias di selezione): la stima non vale per chi ha pochi controlli.",
+   "popolazione": "solo pazienti con TT calcolabile (finestra mesi 6-36)",
+   "n": 870,
+   "eventi": 618,
+   "tipo": "logistico",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "coef": -0.05014366244363169
+    },
+    {
+     "nome": "sesso_M",
+     "coef": 0.13423280058334552
+    },
+    {
+     "nome": "hba1c_basale",
+     "coef": 0.037109621392809586
+    },
+    {
+     "nome": "P",
+     "coef": -0.0017565058761201966
+    },
+    {
+     "nome": "n_principi_attivi",
+     "coef": 0.5443953107177436
+    },
+    {
+     "nome": "durata_dm",
+     "coef": 0.03531683331877587
+    }
+   ],
+   "intercetta": 0.18065131872921025,
+   "auc_fuori_campione": 0.7393794626804335,
+   "o_su_e_fuori_campione": 1.001008890605631,
+   "rischio_medio_osservato": 0.7103448275862069,
+   "rischio_medio_previsto": 0.7102950757527332
+  },
+  {
+   "id": "tt_fuori_target_lab",
+   "esito": "tt_fuori_target",
+   "etichetta": "Tempo in target (TT) inferiore al 70%",
+   "orizzonte_anni": 3,
+   "coorte": "2019",
+   "modello": "lab",
+   "stato": "primario",
+   "requisiti": "Valido solo per pazienti con HbA1c misurata entro il mese 6, almeno 3 misure tra i mesi 6 e 36 e una misura dal mese 36 entro 120 giorni; target 53 mmol/mol sotto gli 80 anni, 64 dagli 80 anni. Il TT e' disponibile soprattutto nei pazienti piu' gravi (bias di selezione): la stima non vale per chi ha pochi controlli.",
+   "popolazione": "solo pazienti con TT calcolabile (finestra mesi 6-36)",
+   "n": 835,
+   "eventi": 594,
+   "tipo": "logistico",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "coef": -0.06208772983603763
+    },
+    {
+     "nome": "sesso_M",
+     "coef": 0.08307975906074219
+    },
+    {
+     "nome": "hba1c_basale",
+     "coef": 0.03762029300717737
+    },
+    {
+     "nome": "P",
+     "coef": 0.012258613244815997
+    },
+    {
+     "nome": "n_principi_attivi",
+     "coef": 0.3982472501370651
+    },
+    {
+     "nome": "durata_dm",
+     "coef": 0.03319980237318771
+    },
+    {
+     "nome": "lab_egfr",
+     "coef": -0.008436945909357797
+    }
+   ],
+   "intercetta": 1.5828270476217954,
+   "auc_fuori_campione": 0.7470346619724213,
+   "o_su_e_fuori_campione": 0.999302275827964,
+   "rischio_medio_osservato": 0.7113772455089821,
+   "rischio_medio_previsto": 0.7113461469137248
+  },
+  {
+   "id": "tt_fuori_target_tol365_nucleo",
+   "esito": "tt_fuori_target_tol365",
+   "etichetta": "Tempo in target (TT) inferiore al 70%, tolleranza 365 giorni",
+   "orizzonte_anni": 3,
+   "coorte": "2019",
+   "modello": "nucleo",
+   "stato": "esplorativo",
+   "requisiti": "Esplorativo. Stessa definizione ma con l'ultima misura fino a 365 giorni dopo il mese 36: popolazione piu' ampia, TT meno preciso nella parte finale della finestra. Stesso bias di selezione verso i pazienti piu' gravi.",
+   "popolazione": "solo pazienti con TT calcolabile (finestra mesi 6-36)",
+   "n": 1755,
+   "eventi": 1180,
+   "tipo": "logistico",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "coef": -0.04068950543419212
+    },
+    {
+     "nome": "sesso_M",
+     "coef": 0.14302089189323572
+    },
+    {
+     "nome": "hba1c_basale",
+     "coef": 0.031825537306447965
+    },
+    {
+     "nome": "P",
+     "coef": 0.007891553662588738
+    },
+    {
+     "nome": "n_principi_attivi",
+     "coef": 0.3968848497432712
+    },
+    {
+     "nome": "durata_dm",
+     "coef": 0.03938828147780632
+    }
+   ],
+   "intercetta": -0.3119715684799984,
+   "auc_fuori_campione": 0.726406779661017,
+   "o_su_e_fuori_campione": 1.0001730759238703,
+   "rischio_medio_osservato": 0.6723646723646723,
+   "rischio_medio_previsto": 0.6723482640181401
+  },
+  {
+   "id": "tt_fuori_target_tol365_lab",
+   "esito": "tt_fuori_target_tol365",
+   "etichetta": "Tempo in target (TT) inferiore al 70%, tolleranza 365 giorni",
+   "orizzonte_anni": 3,
+   "coorte": "2019",
+   "modello": "lab",
+   "stato": "esplorativo",
+   "requisiti": "Esplorativo. Stessa definizione ma con l'ultima misura fino a 365 giorni dopo il mese 36: popolazione piu' ampia, TT meno preciso nella parte finale della finestra. Stesso bias di selezione verso i pazienti piu' gravi.",
+   "popolazione": "solo pazienti con TT calcolabile (finestra mesi 6-36)",
+   "n": 1662,
+   "eventi": 1114,
+   "tipo": "logistico",
+   "variabili": [
+    {
+     "nome": "eta_indice",
+     "coef": -0.044318352371303556
+    },
+    {
+     "nome": "sesso_M",
+     "coef": 0.09306809643657764
+    },
+    {
+     "nome": "hba1c_basale",
+     "coef": 0.03341749055375731
+    },
+    {
+     "nome": "P",
+     "coef": 0.011547096055593032
+    },
+    {
+     "nome": "n_principi_attivi",
+     "coef": 0.35791955894659566
+    },
+    {
+     "nome": "durata_dm",
+     "coef": 0.03788762630194909
+    },
+    {
+     "nome": "lab_egfr",
+     "coef": -0.0034406657330462533
+    }
+   ],
+   "intercetta": 0.10501913994345047,
+   "auc_fuori_campione": 0.7277237940478842,
+   "o_su_e_fuori_campione": 1.001286440814952,
+   "rischio_medio_osservato": 0.6702767749699158,
+   "rischio_medio_previsto": 0.6702763664994713
+  }
+ ]
+}
